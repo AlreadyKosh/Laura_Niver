@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9D3E7C27-B731-4AB4-AD20-47921D4EA7DE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AniversarioLaura</RootNamespace>
+    <AssemblyName>AniversarioLaura</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.25.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bala.cs" />
+    <Compile Include="CriarConta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CriarConta.Designer.cs">
+      <DependentUpon>CriarConta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCharada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCharada.Designer.cs">
+      <DependentUpon>FormCharada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDesafios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDesafios.Designer.cs">
+      <DependentUpon>FormDesafios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHelp.Designer.cs">
+      <DependentUpon>FormHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormJokenpo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormJokenpo.Designer.cs">
+      <DependentUpon>FormJokenpo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMemoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMemoria.Designer.cs">
+      <DependentUpon>FormMemoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPremio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPremio.Designer.cs">
+      <DependentUpon>FormPremio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSuzi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSuzi.Designer.cs">
+      <DependentUpon>FormSuzi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Joken.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Usuario.cs" />
+    <Compile Include="UsuariosCadastrados.cs" />
+    <EmbeddedResource Include="CriarConta.resx">
+      <DependentUpon>CriarConta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCharada.resx">
+      <DependentUpon>FormCharada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDesafios.resx">
+      <DependentUpon>FormDesafios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHelp.resx">
+      <DependentUpon>FormHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormJokenpo.resx">
+      <DependentUpon>FormJokenpo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMemoria.resx">
+      <DependentUpon>FormMemoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPremio.resx">
+      <DependentUpon>FormPremio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSuzi.resx">
+      <DependentUpon>FormSuzi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Laura fundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ammo-Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DouglasBaixo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DouglasCima.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DouglasDireita.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DouglasEsquerda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LauraBaixo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LauraCima.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LauraDireita.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LauraEsquerda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LauraMorta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LauraMemoria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LauraMemoria2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LauraMemoria3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LauraMemoria4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LauraMemoria5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LauraMemoria6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LauraMemoria7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LauraMemoria8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LauraMemoria9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LauraMemoriaVerso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FundoMemoria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FundoAjuda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PapelLaura.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SocoSuzi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TesouraNat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Laura Sprites\vitoria.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Laura Sprites\morte.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Laura Sprites\pontos.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Laura Sprites\tiro.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Musica fundo.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vitoria2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nickneryfundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tela ajuda2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Laura Sprites\Empatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Laura Sprites\Ganhar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Laura Sprites\Perder.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
