@@ -12,13 +12,8 @@ namespace AniversarioLaura
     class UsuariosCadastrados
     {
         
-        /*
 
         private static Usuario Usuarios = new Usuario() { Nome = "Laura Lima", Senha = "abacaxi123" };
-
-        private static Usuario Usuarios2 = new Usuario();
-
-
 
         private static Usuario usuarioLogado;
 
@@ -33,27 +28,7 @@ namespace AniversarioLaura
                 usuarioLogado = value;
             }
         }
-        public void ConsultarBanco()
-        {
-            string strConnection = "Server=127.0.0.1;User ID=root;database=contas_db;password=1213141516.";
-            MySqlConnection conexao = new MySqlConnection(strConnection);
-
-            conexao.Open();
-
-            MySqlCommand consulta = new MySqlCommand();
-            consulta.Connection = conexao;
-
-            consulta.CommandText = "SELECT * FROM tb_usuarios";
-
-            MySqlDataReader Resultado = consulta.ExecuteReader();
-
-            
-            string query = "SELECT * FROM tb_usuarios";
-
-           
-
-        }
-
+       
         public static bool Login(string nome, string senha)
         {
             if(nome == Usuarios.Nome && senha == Usuarios.Senha)
@@ -64,6 +39,6 @@ namespace AniversarioLaura
             return false;
         }
 
-        */
+        
     }
 }

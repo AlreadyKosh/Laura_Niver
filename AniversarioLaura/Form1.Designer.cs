@@ -134,6 +134,7 @@
             this.Text = "Aniversario Laura (Login)";
             this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.FormLogin_HelpButtonClicked);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormLogin_FormClosed);
+            this.Load += new System.EventHandler(this.FormLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

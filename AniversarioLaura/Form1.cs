@@ -31,23 +31,7 @@ namespace AniversarioLaura
         #region Botão Entrar
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            #region Sistema Login Antigo
-            //string nome = txtUsuario.Text;
-            //string senha = txtSenha.Text;
-
-            //if(UsuariosCadastrados.Login(nome,senha))
-            //{
-            //    FormPremio Premio = new FormPremio();
-            //    Premio.ShowDialog();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Acesso Negado", "Não foi Possivel fazer Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    txtUsuario.Text = "";
-            //    txtSenha.Text = "";
-            //    txtUsuario.Focus();
-            //}
-            #endregion
+           
 
             bool resultado = VerificaLogin();
 
@@ -137,6 +121,11 @@ namespace AniversarioLaura
             }
 
             inicio.Stop();
+        }
+
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 

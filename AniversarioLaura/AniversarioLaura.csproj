@@ -96,6 +96,12 @@
     <Compile Include="FormPremio.Designer.cs">
       <DependentUpon>FormPremio.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPremioLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPremioLogin.Designer.cs">
+      <DependentUpon>FormPremioLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormSuzi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormPremio.resx">
       <DependentUpon>FormPremio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPremioLogin.resx">
+      <DependentUpon>FormPremioLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSuzi.resx">
       <DependentUpon>FormSuzi.cs</DependentUpon>

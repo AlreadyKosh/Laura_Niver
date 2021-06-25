@@ -97,5 +97,31 @@ namespace AniversarioLaura
             FormLogin login = new FormLogin();
             login.ShowDialog();
         }
+
+        private void LoginMenuBar_Click(object sender, EventArgs e)
+        {
+
+            this.Hide();
+            FormPremioLogin premioLogin = new FormPremioLogin();
+            premioLogin.ShowDialog();
+            this.Show();
+
+        }
+
+        private void HelpMenuBar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormHelp help = new FormHelp();
+            help.ShowDialog();
+            this.Show();
+        }
+
+        private void criarNovaContaMenuBar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CriarConta criar = new CriarConta();
+            criar.ShowDialog();
+            this.Show();
+        }
     }
 }
