@@ -13,6 +13,7 @@ namespace AniversarioLaura
 {
     public partial class CriarConta : Form
     {
+        
         public CriarConta()
         {
             InitializeComponent();
@@ -64,6 +65,9 @@ namespace AniversarioLaura
 
         }
 
-       
+        private void CriarConta_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

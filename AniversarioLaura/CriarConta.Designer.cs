@@ -170,6 +170,7 @@
             this.Controls.Add(this.txtEmail);
             this.Name = "CriarConta";
             this.Text = "CriarConta";
+            this.Load += new System.EventHandler(this.CriarConta_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -16,8 +16,9 @@ namespace AniversarioLaura
     {
         public int token;
         public SoundPlayer inicio = new SoundPlayer(Properties.Resources.Musica_fundo);
-        private bool Logado = false;
-        
+        public bool Logado { get; private set; } = false;
+
+
 
         public FormLogin()
         {
@@ -75,6 +76,7 @@ namespace AniversarioLaura
             criar.ShowDialog();
             inicio.Play();
             Show();
+
         }
 
         #region LOGIN
@@ -83,6 +85,7 @@ namespace AniversarioLaura
             bool resultado = false;
             string strConnection = "Server=127.0.0.1;User ID=root;database=contas_db;password=1213141516.";
             MySqlConnection conexao = new MySqlConnection(strConnection);
+
 
             try
             {

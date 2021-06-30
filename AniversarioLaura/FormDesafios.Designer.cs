@@ -36,26 +36,25 @@
             this.lblTokens = new System.Windows.Forms.Label();
             this.menu = new System.Windows.Forms.MenuStrip();
             this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.trocarContaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.criarNovaContaMenuBar = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.editarContaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.buscarContaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
+            this.trocarContaMenuBar = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.buscarContaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.placarDeLideresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rescueSuzyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.jokenpoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.jogoDaMemoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
+            this.mimlauTokensToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contaPremioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LoginMenuBar = new System.Windows.Forms.ToolStripMenuItem();
             this.HelpMenuBar = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
-            this.editarContaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
-            this.mimlauTokensToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -143,7 +142,7 @@
             this.toolStripSeparator4,
             this.editarContaToolStripMenuItem,
             this.toolStripSeparator1,
-            this.trocarContaToolStripMenuItem,
+            this.trocarContaMenuBar,
             this.toolStripSeparator2,
             this.buscarContaToolStripMenuItem,
             this.toolStripSeparator6,
@@ -152,17 +151,6 @@
             this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.usuarioToolStripMenuItem.Text = "Usuario";
             // 
-            // trocarContaToolStripMenuItem
-            // 
-            this.trocarContaToolStripMenuItem.Name = "trocarContaToolStripMenuItem";
-            this.trocarContaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.trocarContaToolStripMenuItem.Text = "Trocar Conta";
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(177, 6);
-            // 
             // criarNovaContaMenuBar
             // 
             this.criarNovaContaMenuBar.Name = "criarNovaContaMenuBar";
@@ -170,29 +158,45 @@
             this.criarNovaContaMenuBar.Text = "Criar Nova Conta";
             this.criarNovaContaMenuBar.Click += new System.EventHandler(this.criarNovaContaMenuBar_Click);
             // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(177, 6);
+            // 
+            // editarContaToolStripMenuItem
+            // 
+            this.editarContaToolStripMenuItem.Name = "editarContaToolStripMenuItem";
+            this.editarContaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editarContaToolStripMenuItem.Text = "Editar Conta";
+            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
-            // buscarContaToolStripMenuItem
+            // trocarContaMenuBar
             // 
-            this.buscarContaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripTextBox1});
-            this.buscarContaToolStripMenuItem.Name = "buscarContaToolStripMenuItem";
-            this.buscarContaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.buscarContaToolStripMenuItem.Text = "Buscar Conta";
-            // 
-            // toolStripTextBox1
-            // 
-            this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.toolStripTextBox1.Name = "toolStripTextBox1";
-            this.toolStripTextBox1.Size = new System.Drawing.Size(100, 23);
+            this.trocarContaMenuBar.Name = "trocarContaMenuBar";
+            this.trocarContaMenuBar.Size = new System.Drawing.Size(180, 22);
+            this.trocarContaMenuBar.Text = "Trocar Conta";
+            this.trocarContaMenuBar.Click += new System.EventHandler(this.trocarContaMenuBar_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
+            // 
+            // buscarContaToolStripMenuItem
+            // 
+            this.buscarContaToolStripMenuItem.Name = "buscarContaToolStripMenuItem";
+            this.buscarContaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.buscarContaToolStripMenuItem.Text = "Buscar Conta";
+            this.buscarContaToolStripMenuItem.Click += new System.EventHandler(this.buscarContaToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(177, 6);
             // 
             // placarDeLideresToolStripMenuItem
             // 
@@ -207,6 +211,7 @@
             this.placarDeLideresToolStripMenuItem.Name = "placarDeLideresToolStripMenuItem";
             this.placarDeLideresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.placarDeLideresToolStripMenuItem.Text = "Placar de Lideres";
+            this.placarDeLideresToolStripMenuItem.Click += new System.EventHandler(this.placarDeLideresToolStripMenuItem_Click);
             // 
             // rescueSuzyToolStripMenuItem
             // 
@@ -236,6 +241,17 @@
             this.jogoDaMemoriaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.jogoDaMemoriaToolStripMenuItem.Text = "Jogo da Memoria";
             // 
+            // toolStripSeparator7
+            // 
+            this.toolStripSeparator7.Name = "toolStripSeparator7";
+            this.toolStripSeparator7.Size = new System.Drawing.Size(177, 6);
+            // 
+            // mimlauTokensToolStripMenuItem
+            // 
+            this.mimlauTokensToolStripMenuItem.Name = "mimlauTokensToolStripMenuItem";
+            this.mimlauTokensToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mimlauTokensToolStripMenuItem.Text = "Mimlau Tokens";
+            // 
             // contaPremioToolStripMenuItem
             // 
             this.contaPremioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -247,7 +263,7 @@
             // LoginMenuBar
             // 
             this.LoginMenuBar.Name = "LoginMenuBar";
-            this.LoginMenuBar.Size = new System.Drawing.Size(180, 22);
+            this.LoginMenuBar.Size = new System.Drawing.Size(104, 22);
             this.LoginMenuBar.Text = "Login";
             this.LoginMenuBar.Click += new System.EventHandler(this.LoginMenuBar_Click);
             // 
@@ -257,28 +273,6 @@
             this.HelpMenuBar.Size = new System.Drawing.Size(50, 20);
             this.HelpMenuBar.Text = "Ajuda";
             this.HelpMenuBar.Click += new System.EventHandler(this.HelpMenuBar_Click);
-            // 
-            // toolStripSeparator6
-            // 
-            this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(177, 6);
-            // 
-            // editarContaToolStripMenuItem
-            // 
-            this.editarContaToolStripMenuItem.Name = "editarContaToolStripMenuItem";
-            this.editarContaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.editarContaToolStripMenuItem.Text = "Editar Conta";
-            // 
-            // toolStripSeparator7
-            // 
-            this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(177, 6);
-            // 
-            // mimlauTokensToolStripMenuItem
-            // 
-            this.mimlauTokensToolStripMenuItem.Name = "mimlauTokensToolStripMenuItem";
-            this.mimlauTokensToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.mimlauTokensToolStripMenuItem.Text = "Mimlau Tokens";
             // 
             // FormDesafios
             // 
@@ -317,7 +311,7 @@
         private System.Windows.Forms.MenuStrip menu;
         private System.Windows.Forms.ToolStripMenuItem HelpMenuBar;
         private System.Windows.Forms.ToolStripMenuItem usuarioToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem trocarContaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem trocarContaMenuBar;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripMenuItem criarNovaContaMenuBar;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
@@ -330,7 +324,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripMenuItem jogoDaMemoriaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem contaPremioToolStripMenuItem;
-        private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
         private System.Windows.Forms.ToolStripMenuItem LoginMenuBar;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem editarContaToolStripMenuItem;

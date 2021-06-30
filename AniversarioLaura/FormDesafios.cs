@@ -123,5 +123,26 @@ namespace AniversarioLaura
             criar.ShowDialog();
             this.Show();
         }
+
+        private void trocarContaMenuBar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormLogin login = new FormLogin();
+            login.ShowDialog();
+            this.Show();
+        }
+
+        private void buscarContaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormBusca busca = new FormBusca();
+            busca.ShowDialog();
+            this.Show();
+        }
+
+        private void placarDeLideresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
